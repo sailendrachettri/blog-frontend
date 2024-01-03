@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Rubik+Doodle+Shadow&display=swap');
+
+:root{
+    --logo-font: 'Rubik Doodle Shadow', 'Roboto';
+    --para-font: 'Gowun Dodum', 'Roboto';
+    --heading2-font: 'Gowun Dodum', 'Roboto';
+    --heading1-font: 'Gowun Dodum', 'Roboto';
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    color: #222;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+main{
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header a.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: var(--logo-font);
+}
+
+header nav{
+    display: flex;
+    gap: 15px;
+}
+
+div.post{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 668px){
+    div.post{
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 20px;
+    }
+}
+
+
+div.post div.texts h2{
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: var(--heading2-font);
+    font-weight: bold;
+}
+
+div.post div.texts h2::first-letter{
+    text-transform: capitalize;
+}
+
+div.post div.texts a{
+    text-decoration: none;
+    color: inherit;
+    font-family:var(--heading2-font);
+}
+
+div.post p.info{
+    margin: 5px 0;
+    color: #888;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 10px;
+    font-family: var(--para-font);
+}
+
+div.post p.info a.author{
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+div.post p.summary{
+    margin: 10px 0;
+    line-height: 1.2rem;
+    font-family: var(--para-font);
+}
+
+div.post p.summary::first-letter{
+    text-transform: capitalize;
+}
+
+/* --------------------LOGIN AND REGISTER STYLE-------------------- */
+form.login h1, form.register h1{
+    text-align: center;
+}
+
+form.login, form.register{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input{
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px 7px;
+    border: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #ddd;
+}
+
+button{
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    background-color: #555;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    padding: 7px 0;
+}
+
+/* ---------------------POST DEFINATION PAGE STYLING--------------------- */
+div.post-page h1{
+    text-align: center;
+    font-family: var(--heading1-font);
+}
+
+div.post-page time{
+    text-align: center;
+    display: block;
+    font-size: 0.8rem;
+    color: #595757;
+    font-family: var(--para-font);
+}
+
+div.post-page div.author{
+    text-align: center;
+    margin-bottom: 1.1rem;
+    font-size: 0.8rem;
+    color: #595957;
+    font-family: var(--para-font);
+}
+
+div.edit-row{
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
+div.post-page a.edit-btn{
+    background-color: #333;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.7rem 1.7rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a svg{
+    height: 20px;
+    padding-right: 5px;
+}
+
+div.post-page div.image{
+    max-height: 200px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+div.post-page div.image img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+div.post-page a{
+    color: #31aff5;
+    text-decoration: underline;
+    line-height: 1.4rem;
+}
+
+div.post-page div.content p{
+    line-height: 1.6rem;
+    font-family: var(--para-font);
+    font-size: 21px;
+}
+
+div.post-page div.content p::first-letter{
+    text-transform: capitalize;
+}
+
+
+/* ----------------------------FOOTER STYLE---------------------------- */
+footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+footer div{
+    padding: 5px 0;
+    font-family: var(--para-font);
+}
+
+footer div .linkTag{
+    text-decoration: none;
+    color: #31aff5;
+    font-weight: bold;
+}
